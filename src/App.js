@@ -1,23 +1,78 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import AuthProvider from './Context/AuthProvider/AuthProvider';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import Contact from './components/Contact/Contact';
+import Apartments from './components/Apartments/Apartments';
+import Dashboard from './components/Dashboard/Dashboard';
+import Login from './components/Login/Login';
+import Signup from './components/Signup/Signup';
+import Reset from './components/Reset/Reset';
+import ApartmentDetails from './components/ApartmentDetails/ApartmentDetails';
+import NotFound from './components/NotFound/NotFound';
+import Footer from './components/Footer/Footer';
+import About from './components/About/About';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <AuthProvider>
+        <Router>
+          <Header> </Header>
+
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+
+            <Route path="/about">
+              <About></About>
+            </Route>
+
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route>
+
+            <Route exact path="/apartments">
+              <Apartments></Apartments>
+            </Route>
+
+            <PrivateRoute path="/dashboard">
+              <Dashboard></Dashboard>
+            </PrivateRoute>
+
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+
+            <Route path="/signup">
+              <Signup></Signup>
+            </Route>
+
+            <Route path="/reset">
+              <Reset></Reset>
+            </Route>
+
+            <Route path="/apartments/:id">
+              <ApartmentDetails></ApartmentDetails>
+            </Route>
+
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }

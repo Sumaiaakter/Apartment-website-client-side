@@ -1,0 +1,65 @@
+[
+    {
+        "key": 1001,
+        "img": "https://i.ibb.co/HqTD3Wm/p-24.jpg",
+        "title": "Westport Central",
+        "desc": "Contact us today to get your real estate agent MLS® IDX solution to produce at high level. Real Geeks Builds Powerful, Simple And Easy-To-Use Software. Built for Agents by Agents. View Demo. Generate More Leads. Close More Deals. Request For More Info.",
+        "price": 350000,
+        "rating": 4.5,
+        "ratingCount": "500"
+    },
+    {
+        "key": 1001,
+        "img": "https://i.ibb.co/HqTD3Wm/p-24.jpg",
+        "title": "Westport Central",
+        "desc": "Contact us today to get your real estate agent MLS® IDX solution to produce at high level. Real Geeks Builds Powerful, Simple And Easy-To-Use Software. Built for Agents by Agents. View Demo. Generate More Leads. Close More Deals. Request For More Info.",
+        "price": 350000,
+        "rating": 4.5,
+        "ratingCount": "500"
+    },
+    {
+        "key": 1002,
+        "img": "https://i.ibb.co/3kmgX01/p-10.jpg",
+        "title": "Westport Central",
+        "desc": "Contact us today to get your real estate agent MLS® IDX solution to produce at high level. Real Geeks Builds Powerful, Simple And Easy-To-Use Software. Built for Agents by Agents. View Demo. Generate More Leads. Close More Deals. Request For More Info.",
+        "price": 350000,
+        "rating": 4.6,
+        "ratingCount": "500"
+    },
+    {
+        "key": 1003,
+        "img": "https://i.ibb.co/vw89MrQ/p-4.jpg",
+        "title": "Westport Central",
+        "desc": "Contact us today to get your real estate agent MLS® IDX solution to produce at high level. Real Geeks Builds Powerful, Simple And Easy-To-Use Software. Built for Agents by Agents. View Demo. Generate More Leads. Close More Deals. Request For More Info.",
+        "price": 350000,
+        "rating": 4.4,
+        "ratingCount": "500"
+    },
+    {
+        "key": 1004,
+        "img": "https://i.ibb.co/mh12xXb/p-27.jpg",
+        "title": "Westport Central",
+        "desc": "Contact us today to get your real estate agent MLS® IDX solution to produce at high level. Real Geeks Builds Powerful, Simple And Easy-To-Use Software. Built for Agents by Agents. View Demo. Generate More Leads. Close More Deals. Request For More Info.",
+        "price": 350000,
+        "rating": 4.7,
+        "ratingCount": "500"
+    },
+    {
+        "key": 1005,
+        "img": "https://i.ibb.co/HqTD3Wm/p-24.jpg",
+        "title": "Westport Central",
+        "desc": "Contact us today to get your real estate agent MLS® IDX solution to produce at high level. Real Geeks Builds Powerful, Simple And Easy-To-Use Software. Built for Agents by Agents. View Demo. Generate More Leads. Close More Deals. Request For More Info.",
+        "price": 350000,
+        "rating": 5.00,
+        "ratingCount": "500"
+    },
+    {
+        "key": 1006,
+        "img": "https://i.ibb.co/HqTD3Wm/p-24.jpg",
+        "title": "Westport Central",
+        "desc": "Contact us today to get your real estate agent MLS® IDX solution to produce at high level. Real Geeks Builds Powerful, Simple And Easy-To-Use Software. Built for Agents by Agents. View Demo. Generate More Leads. Close More Deals. Request For More Info.",
+        "price": 350000,
+        "rating": 4.9,
+        "ratingCount": "500"
+    }
+]
