@@ -1,0 +1,16 @@
+.single-service{
+    border: 3px solid blue;
+    border-radius: 20px;
+    background-color: rgb(165, 168, 170);
+    
+}
+img{
+    height: 50vh;
+    border-radius: 20px;
+    padding: 5px;
+    
+}
+img:hover{
+    cursor: pointer;
+    
+}

@@ -8,3 +8,8 @@
     display: inline-block;
     border-radius: 50%;
   }
+  @media screen and (max-width: 400px) {
+    .title {
+      display: none;
+    }
+  }

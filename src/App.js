@@ -10,12 +10,13 @@ import Apartments from './components/Apartments/Apartments';
 import Dashboard from './components/Dashboard/Dashboard';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
-import Reset from './components/Reset/Reset';
-import ApartmentDetails from './components/ApartmentDetails/ApartmentDetails';
+
+import Details from './components/Details/Details';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Cart from './components/Cart/Cart';
 
 
 function App() {
@@ -42,12 +43,8 @@ function App() {
               <Contact></Contact>
             </Route>
 
-            <Route exact path="/apartments">
+            <PrivateRoute exact path="/apartments">
               <Apartments></Apartments>
-            </Route>
-
-            <PrivateRoute path="/dashboard">
-              <Dashboard></Dashboard>
             </PrivateRoute>
 
             <Route path="/login">
@@ -58,12 +55,12 @@ function App() {
               <Signup></Signup>
             </Route>
 
-            <Route path="/reset">
-              <Reset></Reset>
-            </Route>
+            <PrivateRoute path="/dashboard">
+              <Dashboard></Dashboard>
+            </PrivateRoute>
 
             <Route path="/apartments/:id">
-              <ApartmentDetails></ApartmentDetails>
+              <Details></Details>
             </Route>
 
             <Route path="*">
