@@ -1,20 +1,19 @@
 import React from 'react';
-import { Badge, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import './Header.css';
 import header from './../../assets/images/header-bg.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
 import { NavLink } from "react-router-dom";
 import useAuth from '../../Hooks/useAuth';
 import { HashLink } from 'react-router-hash-link';
 
 
 const Header = () => {
-    const { allContext, selectedApartment } = useAuth();
+    const { allContext, } = useAuth();
 
 
     const { user, logOut } = allContext;
-    const { displayName, email } = user;
+    const { displayName, email, uid } = user;
     return (
         <div className="sticky-top">
             <Navbar style={{ background: `url(${header})` }} expand="lg">
@@ -77,6 +76,14 @@ const Header = () => {
                                         </>
                                     )
 
+                            }
+                            {/* hBagQWjYnKbfbWLkiE9B2tl6CU52 */}
+                            {
+                                uid === "hBagQWjYnKbfbWLkiE9B2tl6CU52" && (
+                                    <Nav.Link as={HashLink} to="/admin" className="text-white">
+                                        Admin
+                                    </Nav.Link>
+                                )
                             }
 
 

@@ -7,7 +7,7 @@ import useFirebase from "./useFirebase";
 const useCart = () => {
 
     const { user } = useFirebase();
-    const { uid } = user;
+    const { uid, displayName, email } = user;
     const [selectedApartment, setSelectedApartment] = useState([]);
 
 
@@ -33,6 +33,8 @@ const useCart = () => {
 
         delete apartment._id;
         apartment.uid = uid;
+        apartment.name = displayName;
+        apartment.email = email;
         apartment.status = 'pending';
 
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Button, Row } from "react-bootstrap";
-import bgImage from "./../../assets/images/sectionBg.png";
+
 import banner from './../../assets/images/banner.png'
-import { useHistory } from "react-router-dom";
+
 import useAuth from '../../Hooks/useAuth';
 import sectionBg from './../../assets/images/sectionBg.png';
 import Apartment from '../Apartment/Apartment';

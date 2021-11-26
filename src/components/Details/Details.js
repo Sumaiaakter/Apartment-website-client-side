@@ -37,7 +37,7 @@ const Details = () => {
                     alert('service did not found')
                 }
             })
-    }, [])
+    }, [id])
 
     return (
         <div className="my-4">

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import google from "./../../assets/images/google.png";
-import { faEnvelope, faLock, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons";
 import { Col, Form, FormControl, InputGroup, Modal, Row, Spinner } from 'react-bootstrap';
 import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
@@ -24,7 +24,7 @@ const Login = () => {
 
     // send user expected page
     const location = useLocation();
-    const redirect = location?.state?.from;
+
 
     const history = useHistory();
 

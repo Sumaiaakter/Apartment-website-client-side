@@ -16,7 +16,8 @@ import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
-import Cart from './components/Cart/Cart';
+import AdminPanel from './components/AdminPanel/AdminPanel';
+
 
 
 function App() {
@@ -53,6 +54,9 @@ function App() {
 
             <Route path="/signup">
               <Signup></Signup>
+            </Route>
+            <Route path="/admin">
+              <AdminPanel></AdminPanel>
             </Route>
 
             <PrivateRoute path="/dashboard">
